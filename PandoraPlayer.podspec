@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 
   s.dependency "AudioKit", "4.0.3"
 
-  s.swift_version = '3.0'
+  s.swift_version = '4.0'
 
 end
