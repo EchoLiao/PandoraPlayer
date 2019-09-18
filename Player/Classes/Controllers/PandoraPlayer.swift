@@ -465,7 +465,13 @@ open class PandoraPlayer: UIViewController {
 // MARK: Helpers
     
     static func pandoraPlayerInstance() -> PandoraPlayer {
-        let storyboard = UIStoryboard(name: storyboardIdentifier, bundle: Bundle(for: PandoraPlayer.classForCoder()))
+        let b = Bundle(for: PandoraPlayer.classForCoder())
+        print("b=\(b)")
+//        guard let path = b.path(forResource: "custom", ofType: "bundle"), let bundle = Bundle(path: path) else {
+//            return PandoraPlayer()
+//        }
+//        print("bundle=\(bundle)")
+        let storyboard = UIStoryboard(name: storyboardIdentifier, bundle: b)
         return storyboard.instantiateViewController(withIdentifier: String(describing: self)) as! PandoraPlayer
     }
 }
