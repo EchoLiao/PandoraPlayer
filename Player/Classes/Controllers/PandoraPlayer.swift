@@ -381,7 +381,10 @@ open class PandoraPlayer: UIViewController {
     }
 	
     fileprivate func togglePlay() {
-        guard let audioFile = player.audioFile, audioFile.url == currentSong?.url else {
+        guard
+            let audioFile = player.audioFile,
+            audioFile.url == currentSong?.url
+            else {
             reloadPlayer()
             return
         }
