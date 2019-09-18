@@ -16,10 +16,13 @@ Pod::Spec.new do |s|
   s.source_files = "Player", "Player/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
-  s.resources = "Player/**/*.{storyboard,xib,xcassets}"
+  #s.resources = "Player/**/*.{storyboard,xib,xcassets}"
+  s.resource_bundle = { "custom" => "Player/**/*.{storyboard,xib,xcassets}" }
 
   s.dependency "AudioKit", "4.9"
 
   s.swift_version = '5.1'
+
+  s.static_framework = true
 
 end
