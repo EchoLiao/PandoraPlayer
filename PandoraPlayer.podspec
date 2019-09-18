@@ -18,8 +18,8 @@ Pod::Spec.new do |s|
 
   s.resources = "Player/**/*.{storyboard,xib,xcassets}"
 
-  s.dependency "AudioKit", "4.0"
+  s.dependency "AudioKit", "4.9"
 
-  s.swift_version = '4.0'
+  s.swift_version = '5.1'
 
 end
