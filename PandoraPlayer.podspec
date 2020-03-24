@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.resources = "Player/**/*.{storyboard,xib,xcassets}"
   #s.resource_bundle = { "custom" => "Player/**/*.{storyboard,xib,xcassets}" }
 
-  s.dependency "AudioKit", "~> 4.9"
+  s.dependency "AudioKit", "4.9"
 
   s.swift_version = '5.1'
 
